@@ -1,5 +1,8 @@
 <article itemscope itemtype="http://schema.org/BlogPosting"
   role="article" class="post-item {{post_class}}">
+  {{#if image}}
+    <div style="background-image: url('{{image}}')" class="post-item-image"></div>
+  {{/if}}
   <header class="post-item-header">
     <h2 itemprop="name" class="post-item-title">
       <a href="{{url}}" itemprop="url" data-pjax title="{{{title}}}">
